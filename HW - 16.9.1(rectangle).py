@@ -29,22 +29,3 @@ b = 49
 result = Rectangle(a, b)
 print(result.getArea())
 
-==================================================================================================================
-
-
-# Задание 16.9.3                          вывод информации о клиенте в строку методом __str__
-class Clients:
-    def __init__(self, firstname, lastname, city, balance):
-        self.firstname = firstname
-        self.lastname = lastname
-        self.city = city
-        self.balance = balance
-
-    def __str__(self):
-        return f'{self.firstname} {self.lastname}. {self.city}. Balance: {self.balance} руб.'
-
-client1 = Clients('Иван', 'Петров', 'Москва', '50')
-print(client1.__str__())
-
-==================================================================================================================
-
